@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   final = {}
   data.each do |category, category_data|
-    category_data.each do |type, listed_names|
+    category_data.each do |group, listed_names|
       listed_names.each do |name|
         final[name] = {color: [], gender: [], lives: []}
       end
@@ -17,11 +17,11 @@ data[:color].each do |bird_color, name|
     end
   end
 end
-data[:gender].each do |bird_gender, type|
+data[:gender].each do |gender, type|
   type.each do |bird_name|
     information.each do |item|
       if bird_name === item
-        final[item][:gender] << bird_gender.to_s
+        final[item][:gender] << gender.to_s
       end
     end
   end
