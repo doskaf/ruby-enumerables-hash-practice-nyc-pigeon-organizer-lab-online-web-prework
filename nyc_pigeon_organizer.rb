@@ -17,7 +17,10 @@ data[:color].each do |bird_color, name|
     end
   end
 end
-
+data[:gender].each do |bird_gender, name|
+  name.each do |bird_name|
+    information.each do |item|
+      if bird_name === item
 
 
 end
