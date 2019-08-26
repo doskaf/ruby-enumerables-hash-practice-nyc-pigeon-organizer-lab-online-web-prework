@@ -35,6 +35,5 @@ data[:lives].each do |location, name|
     end
   end
 end
-  
-  
+return final
 end
