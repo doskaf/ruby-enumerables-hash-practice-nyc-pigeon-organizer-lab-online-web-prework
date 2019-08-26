@@ -21,6 +21,11 @@ data[:gender].each do |bird_gender, name|
   name.each do |bird_name|
     information.each do |item|
       if bird_name === item
+        final[item][:gender] << bird_gender.to_s
+      end
+    end
+  end
+end
 
 
 end
