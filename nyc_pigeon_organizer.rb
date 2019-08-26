@@ -26,6 +26,15 @@ data[:gender].each do |bird_gender, name|
     end
   end
 end
-
-
+data[:lives].each do |location, name|
+  name.each do |bird_name|
+    information.each do |item|
+      if bird_name === item
+        final[item][:gender] << location
+      end
+    end
+  end
+end
+  
+  
 end
