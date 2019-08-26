@@ -11,7 +11,8 @@ information = final.keys
 data[:color].each do |bird_color, name|
   name.each do |bird_name|
     information.each do |item|
-      
+      if bird_name === item
+        
 
 
 
