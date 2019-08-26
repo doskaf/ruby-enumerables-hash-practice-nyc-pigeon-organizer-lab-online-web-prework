@@ -13,6 +13,10 @@ data[:color].each do |bird_color, name|
     information.each do |item|
       if bird_name === item
         final[item][:color] << bird_color.to_s
+      end
+    end
+  end
+end
 
 
 
